@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.web-body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./Assets/background-image.png");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.navbar{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.nav-link ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+    color: gray;
+}
+.nav-link a:hover{
+    text-shadow: 0.3px 0 0 gray;
+}
+.nav-search{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color:rgb(237,1,127);
+    cursor: pointer;
+}
+.nav-search button{
+    background-color: rgb(237,1,127);
+    color: white;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero{
+    display: flex;
+}
+.hero-left{
+    display: flex;
+    align-items: center;
+    width: 39%;
+}
+.hero-content{
+    margin-left: 100px;
+    position: relative;
+}
+.hero-content h1{
+    font-size: 70px;
+}
+.hero-content p{
+    margin-top: 20px;
+    font-size: x-large;
+    color: gray;
+}
+.hero-content > div{
+    display: flex;
+    gap:20px;
+    margin-top: 50px;
+}
+.hero-content button{
+    font-size: medium;
+    padding-top:12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 5px;
+    border: none;
+    text-wrap: nowrap;
+}
+.hero-content button:first-child{
+    color: white;
+    background-color: rgb(237,1,127);
+}
+.hero-content button:nth-child(2){
+    background-color: white;
+    color: rgb(237,1,127);
+    border:0.3px solid rgb(237,1,127);
+}
+.hero-content button:nth-child(2):hover{
+    color: white;
+    background-color: rgb(237,1,127);
+}
+.hero-icons{
+    position: fixed;
+    margin-left: 100px;
+    display: flex;
+    margin-bottom: 40px;
+    gap:16px;
+    align-items: center;
+    bottom: 0px;
+    cursor: pointer;
+}
+.hero-icons p{
+    font-size: x-large;
+    align-self: center;
+}
+
+.hero-right{
+    margin-left: auto;
+    width: 61%;
+    position: relative;
+}
+.hero-right img{
+    width: 100%;
+}
+.right-car, .right-home{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    font-size: large;
+    padding-left:10px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 0 8px gray;
+    width: fit-content;
+    border-radius: 100px;
+    background-color: white;
+    color: gray;
+}
+.right-car img, .right-home img{
+    width: 40px;
+}
+.right-car{
+    position: absolute;
+    top:40px;
+    left: 100px; 
+}
+.right-home{
+    position: absolute;
+    top:30%;
+    right: 70px;
+}
+@media only screen and (max-width:1380px) {
+    .hero-left{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:1140px) {
+    .hero-content h1{
+        font-size: 40px;
+    }
+    .hero-left{
+        width: 50%;
+    }
+    .right-car{
+        top:20px;
+        left: 30px; 
+    }
+    .right-home{
+        position: absolute;
+        top:30%;
+        right: 30px;
+    }
+}
+@media only screen and (max-width:1020px){
+    .navbar{
+        display: block;
+    }
+    .nav-link ul{
+        width: 100%;
+        gap: 40px;
+        margin-bottom: 18px;
+    }
+    .hero-icons{
+        margin-left:100px;
+        margin-bottom:20px;
+    }
+}
+@media only screen and (max-width:880px){
+    
+    .nav-link ul{
+        gap: 15px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .hero-left{
+        width: 90%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-left h1 {
+        text-align: center;
+        padding-top: 25px;
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .hero-icons{
+        position: relative;
+    }
+    .hero-content{
+        margin-bottom: 30px;
+    }
+    
+    .web-body{
+        height: auto;
+        background-color: rgb(255,234,245);
+        background-image: none;
+    }
+    .navbar{
+        margin-bottom: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width:754px){
+    .nav-link ul{
+        display: block;
+        text-align: right;
+    }
+}
+@media only screen and (max-width: 513px){
+    .hero-content div{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-left{
+        width: 100%;
+    }
+    .hero-content{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .hero-content p{
+        text-align: center;
+    }
+    .hero-icons{
+        margin: 0 auto;
+    }
+    .hero-right div{
+        position: static;
+        align-self: center;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
